@@ -29,7 +29,7 @@ export class Board {
         const neighborOffsets = [ [-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]];
         const numberOfRows = this._bombBoard.length;
         const numberOfColumns = this._bombBoard[0].length;
-        let numberOfBombs = 0;
+        this._numberOfBombs = 0;
         neighborOffsets.forEach(offset => {
             const neighborRowIndex = rowIndex + offset[0];
             const neighborColumnIndex = columnIndex + offset[1];
@@ -39,7 +39,7 @@ export class Board {
                 }
             }
         });
-        return numberOfBombs;
+        return this._numberOfBombs;
     }
 
     hasSafeTiles(){
