@@ -1,8 +1,8 @@
-##Minesweeper 
+## git Minesweeper 
 Minesweeper is a single player game. The objective of the game is to clear a board 
 with hidden mines without detonating any of them. 
 
-###Installation 
+### Installation 
 
 1. Download the repository 
 2. Open your terminal 
